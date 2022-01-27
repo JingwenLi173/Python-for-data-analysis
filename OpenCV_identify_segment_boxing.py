@@ -56,3 +56,14 @@ cv2.drawContours(image, [box], -1, (0, 255, 0), 3)
 # cv2.imshow("Image", image)
 cv2.imwrite("contoursImage2.jpg", image)
 cv2.waitKey(0)
+
+Xs = [i[0] for i in box]
+Ys = [i[1] for i in box]
+x1 = min(Xs)
+x2 = max(Xs)
+y1 = min(Ys)
+y2 = max(Ys)
+hight = y2 - y1
+width = x2 - x1
+cropImg = image[y1:y1+hight, x1:x1+width]
+cv2.imwrite("cropImg.jpg", cropImg)
