@@ -59,6 +59,3 @@ plt.title('Receiver operating characteristic example')
 plt.legend(loc="lower right")
 plt.savefig('loocv.png',dpi=600) # 以600大批保存图片
 plt.show()
-————————————————
-版权声明：本文为CSDN博主「机器不学习我学习」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/AugustMe/article/details/94717440
