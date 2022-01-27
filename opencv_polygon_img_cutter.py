@@ -4,7 +4,7 @@ import numpy as np
  
 def ROI_byMouse(img,lsPointsChoose):
     mask = np.zeros(img.shape, np.uint8)
-    pts = np.array(lsPointsChoose, np.int32)  # pts是多边形的顶点列表（顶点集）
+    pts = np.array(lsPointsChoose, np.int32)  # 2d contours points, squeeze() if necessary
     col0 =pts[:,0]
     col1 =pts[:,1]
     x1=np.min(col0)
